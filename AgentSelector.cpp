@@ -17,9 +17,29 @@ int main(){
     std::cout<<"Enter: ";
     std::cin>>playerchoice;
 
-    srand(time(0));
-
-    randomiser();
+    if (playerchoice==1){
+        srand(time(0));
+        randomiser();
+    }
+    else if (playerchoice==2){
+        srand(time(0));
+        randomiser();
+    }
+    else if (playerchoice==3){
+        srand(time(0));
+        randomiser();
+    }
+    else if (playerchoice==4){
+        srand(time(0));
+        randomiser();
+    }
+    else if (playerchoice==5){
+        srand(time(0));
+        randomiser();
+    }
+    else{
+        std::cout<<"Please enter a correct input T_T";
+    }
 
     return 0;
 }
