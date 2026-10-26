@@ -1,8 +1,13 @@
 #include <iostream>
 #include <cstdlib> //for the randomiser function
 #include <ctime> //for the time function so that the randomiser resets
+#include <vector> //vectors size can change accordingly while arrays cannot, a more bug friendly array
 
 void randomiser();
+
+std::vector<std::string> Agents = {"Jett","Yoru", "Iso", "Reyna", "Brimstone", "Chamber", "Clove", "Cypher", 
+"Deadlock", "Fade", "Gekko", "Harbor", "Miks", "Astra", "Waylay", "Veto","KAY/O", "Killjoy", "Neon", "Omen", 
+"Phoenix", "Raze", "Tejo", "Breach", "Sage", "Skye", "Sova", "Viper", "Vyse", "Hush"};
 
 int main(){
     int playerchoice;
