@@ -9,9 +9,9 @@ std::vector<std::string> AllAgents = {"Jett", "Yoru", "Iso", "Reyna", "Brimstone
 "Deadlock", "Fade", "Gekko", "Harbor", "Miks", "Astra", "Waylay", "Veto","KAY/O", "Killjoy", "Neon", "Omen", 
 "Phoenix", "Raze", "Tejo", "Breach", "Sage", "Skye", "Sova", "Viper", "Vyse", "Hush"};
 std::vector<std::string> Duelists = {"Jett", "Yoru", "Iso", "Reyna", "Waylay", "Neon", "Pheonix", "Raze", "Hush"};
-std::vector<std::string> Initiators = {"Fade", "Gekko", "KAY/O", "Breach", "Skye", "Sova"};
-std::vector<std::string> Controllers = {"Brimstone", "Clove", "Harbor", "Astra", "Omen", "Viper"};
-std::vector<std::string> Sentinels = {"Chamber", "Cypher", "Deadlock", "Killjoy", "Sage", "Vyse"};
+std::vector<std::string> Initiators = {"Fade", "Gekko", "KAY/O", "Breach", "Skye", "Sova", "Tejo"};
+std::vector<std::string> Controllers = {"Brimstone", "Clove", "Harbor", "Astra", "Omen", "Viper", "Miks"};
+std::vector<std::string> Sentinels = {"Chamber", "Cypher", "Deadlock", "Killjoy", "Sage", "Vyse", "Veto"};
 
 int main(){
     int playerchoice;
