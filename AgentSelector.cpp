@@ -26,7 +26,9 @@ int main(){
         std::cout<<"3. Random initiator\n";
         std::cout<<"4. Random controller\n";
         std::cout<<"5. Random sentinel\n";
-        std::cout<<"Enter: \n";
+        std::cout<<"6. Quit/Touch Grass\n";
+        std::cout<<"Enter: ";
+        std::cout<<"\n";
         std::cin>>playerchoice;
         std::cin.ignore();
 
@@ -44,6 +46,10 @@ int main(){
         }
         else if (playerchoice==5){
             randomiser(Sentinels);
+        }
+        else if(playerchoice==6){
+            std::cout<<"Go touch some grass";
+            break;
         }
         else{
             std::cout<<"Please enter a correct input\n";
