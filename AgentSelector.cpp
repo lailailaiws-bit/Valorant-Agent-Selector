@@ -3,7 +3,7 @@
 #include <ctime> //for the time function so that the randomiser resets
 #include <vector> //vectors size can change accordingly while arrays cannot, a more bug friendly array
 
-void randomiser(std::vector<std::string> Agents);
+void randomiser(std::vector<std::string> Agents); //Added a vector argument so that it can accept different vectors accordingly
 
 std::vector<std::string> AllAgents = {"Jett", "Yoru", "Iso", "Reyna", "Brimstone", "Chamber", "Clove", "Cypher", 
 "Deadlock", "Fade", "Gekko", "Harbor", "Miks", "Astra", "Waylay", "Veto","KAY/O", "Killjoy", "Neon", "Omen", 
@@ -29,23 +29,23 @@ int main(){
 
     if (playerchoice==1){
         srand(time(0));
-        randomiser();
+        randomiser(AllAgents);
     }
     else if (playerchoice==2){
         srand(time(0));
-        randomiser();
+        randomiser(Duelists);
     }
     else if (playerchoice==3){
         srand(time(0));
-        randomiser();
+        randomiser(Initiators);
     }
     else if (playerchoice==4){
         srand(time(0));
-        randomiser();
+        randomiser(Controllers);
     }
     else if (playerchoice==5){
         srand(time(0));
-        randomiser();
+        randomiser(Sentinels);
     }
     else{
         std::cout<<"Please enter a correct input T_T";
