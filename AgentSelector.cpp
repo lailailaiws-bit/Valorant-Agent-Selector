@@ -21,6 +21,7 @@ int main(){
     std::cout<<"5. Random sentinel\n";
     std::cout<<"Enter: ";
     std::cin>>playerchoice;
+    std::cin.ignore();
 
     if (playerchoice==1){
         srand(time(0));
@@ -50,6 +51,7 @@ int main(){
 }
 
 void randomiser(){
-    int randNum = rand() % 29;
-    std::cout<<randNum;
+    int randNum = rand() % Agents.size();
+    std::cout<<randNum<<"\n";
+    std::cout<<Agents.at(randNum);
 }
