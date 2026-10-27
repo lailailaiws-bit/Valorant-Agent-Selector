@@ -16,6 +16,8 @@ std::vector<std::string> Sentinels = {"Chamber", "Cypher", "Deadlock", "Killjoy"
 int main(){
     int playerchoice;
 
+    srand(time(0));
+
     std::cout<<"Welcome to the Valorant Agent Selector!\n";
     std::cout<<"Would you like to choose a role or just a random character?\n";
     std::cout<<"1. Random character\n";
@@ -28,23 +30,18 @@ int main(){
     std::cin.ignore();
 
     if (playerchoice==1){
-        srand(time(0));
         randomiser(AllAgents);
     }
     else if (playerchoice==2){
-        srand(time(0));
         randomiser(Duelists);
     }
     else if (playerchoice==3){
-        srand(time(0));
         randomiser(Initiators);
     }
     else if (playerchoice==4){
-        srand(time(0));
         randomiser(Controllers);
     }
     else if (playerchoice==5){
-        srand(time(0));
         randomiser(Sentinels);
     }
     else{
