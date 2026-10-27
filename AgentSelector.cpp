@@ -3,9 +3,9 @@
 #include <ctime> //for the time function so that the randomiser resets
 #include <vector> //vectors size can change accordingly while arrays cannot, a more bug friendly array
 
-void randomiser();
+void randomiser(std::vector<std::string> Agents);
 
-std::vector<std::string> Agents = {"Jett", "Yoru", "Iso", "Reyna", "Brimstone", "Chamber", "Clove", "Cypher", 
+std::vector<std::string> AllAgents = {"Jett", "Yoru", "Iso", "Reyna", "Brimstone", "Chamber", "Clove", "Cypher", 
 "Deadlock", "Fade", "Gekko", "Harbor", "Miks", "Astra", "Waylay", "Veto","KAY/O", "Killjoy", "Neon", "Omen", 
 "Phoenix", "Raze", "Tejo", "Breach", "Sage", "Skye", "Sova", "Viper", "Vyse", "Hush"};
 std::vector<std::string> Duelists = {"Jett", "Yoru", "Iso", "Reyna", "Waylay", "Neon", "Pheonix", "Raze", "Hush"};
@@ -54,7 +54,7 @@ int main(){
     return 0;
 }
 
-void randomiser(){
+void randomiser(std::vector<std::string>Agents){
     int randNum = rand() % Agents.size();
     std::cout<<randNum<<"\n";
     std::cout<<Agents.at(randNum);
