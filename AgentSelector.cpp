@@ -5,9 +5,13 @@
 
 void randomiser();
 
-std::vector<std::string> Agents = {"Jett","Yoru", "Iso", "Reyna", "Brimstone", "Chamber", "Clove", "Cypher", 
+std::vector<std::string> Agents = {"Jett", "Yoru", "Iso", "Reyna", "Brimstone", "Chamber", "Clove", "Cypher", 
 "Deadlock", "Fade", "Gekko", "Harbor", "Miks", "Astra", "Waylay", "Veto","KAY/O", "Killjoy", "Neon", "Omen", 
 "Phoenix", "Raze", "Tejo", "Breach", "Sage", "Skye", "Sova", "Viper", "Vyse", "Hush"};
+std::vector<std::string> Duelists = {"Jett", "Yoru", "Iso", "Reyna", "Waylay", "Neon", "Pheonix", "Raze", "Hush"};
+std::vector<std::string> Initiators = {"Fade", "Gekko", "KAY/O", "Breach", "Skye", "Sova"};
+std::vector<std::string> Controllers = {"Brimstone", "Clove", "Harbor", "Astra", "Omen", "Viper"};
+std::vector<std::string> Sentinels = {"Chamber", "Cypher", "Deadlock", "Killjoy", "Sage", "Vyse"};
 
 int main(){
     int playerchoice;
