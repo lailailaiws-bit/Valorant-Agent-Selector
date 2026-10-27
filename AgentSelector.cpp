@@ -18,7 +18,41 @@ int main(){
 
     srand(time(0));
 
-    std::cout<<"Welcome to the Valorant Agent Selector!\n";
+    do{
+        std::cout<<"Welcome to the Valorant Agent Selector!\n";
+        std::cout<<"Would you like to choose a role or just a random character?\n";
+        std::cout<<"1. Random character\n";
+        std::cout<<"2. Random duelist\n";
+        std::cout<<"3. Random initiator\n";
+        std::cout<<"4. Random controller\n";
+        std::cout<<"5. Random sentinel\n";
+        std::cout<<"Enter: \n";
+        std::cin>>playerchoice;
+        std::cin.ignore();
+
+        if (playerchoice==1){
+            randomiser(AllAgents);
+        }
+        else if (playerchoice==2){
+           randomiser(Duelists);
+        }
+        else if (playerchoice==3){
+            randomiser(Initiators);
+        }
+        else if (playerchoice==4){
+            randomiser(Controllers);
+        }
+        else if (playerchoice==5){
+            randomiser(Sentinels);
+        }
+        else{
+            std::cout<<"Please enter a correct input\n";
+        }
+    } while (playerchoice<=0 || playerchoice > 5);
+
+}
+
+/*    std::cout<<"Welcome to the Valorant Agent Selector!\n";
     std::cout<<"Would you like to choose a role or just a random character?\n";
     std::cout<<"1. Random character\n";
     std::cout<<"2. Random duelist\n";
@@ -49,10 +83,11 @@ int main(){
     }
 
     return 0;
-}
+}*/
 
 void randomiser(std::vector<std::string>Agents){
     int randNum = rand() % Agents.size();
+    std::cout<<"\n";
     std::cout<<randNum<<"\n";
-    std::cout<<Agents.at(randNum);
+    std::cout<<Agents.at(randNum)<<"\n";
 }
