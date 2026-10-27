@@ -16,7 +16,7 @@ std::vector<std::string> Sentinels = {"Chamber", "Cypher", "Deadlock", "Killjoy"
 int main(){
     int playerchoice;
 
-    srand(time(0));
+    srand(time(0)); //To reset the randomiser
 
     do{
         std::cout<<"Welcome to the Valorant Agent Selector!\n";
@@ -28,7 +28,6 @@ int main(){
         std::cout<<"5. Random sentinel\n";
         std::cout<<"6. Quit/Touch Grass\n";
         std::cout<<"Enter: ";
-        std::cout<<"\n";
         std::cin>>playerchoice;
         std::cin.ignore();
 
@@ -61,6 +60,5 @@ int main(){
 void randomiser(std::vector<std::string>Agents){
     int randNum = rand() % Agents.size();
     std::cout<<"\n";
-    std::cout<<randNum<<"\n";
-    std::cout<<Agents.at(randNum)<<"\n";
+    std::cout<<"Your chosen agent is "<<Agents.at(randNum)<<"\n";
 }
